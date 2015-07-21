@@ -19,9 +19,10 @@ Run the simple command
 ::
     restaurant_stats url
 to generate a graph.png file in the current directory containing the required graph, 
-    eg. restaurant_stats "https://www.zomato.com/amritsar/ranjit-avenue-restaurants?category=1"
+    eg. restaurant_stats https://www.zomato.com/amritsar/ranjit-avenue-restaurants?category=1
     or save it under a name of your choice
-    eg. restaurant_stats "https://www.zomato.com/amritsar/ranjit-avenue-restaurants?category=1" -f "mygraph.png"
+    
+    eg. restaurant_stats https://www.zomato.com/amritsar/ranjit-avenue-restaurants?category=1 -f "mygraph.png"
 
 For other options and help run
 ::
