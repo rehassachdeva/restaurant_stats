@@ -35,6 +35,11 @@ Why?
 * I am a big foodie and thought it'd be nice to optimise restaurant finding in this way.
 * Graphs are fun :).
 
+Inspiration
+===========
+
+https://github.com/leosartaj/tvstats
+
 Example
 =======
 
