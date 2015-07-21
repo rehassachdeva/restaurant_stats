@@ -1,14 +1,16 @@
 """Funtions for scraping data from the given link"""
 
 from bs4 import BeautifulSoup
-from urllib import urlopen
+import requests
+
+HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:20.0) Gecko/20100101 Firefox/20.0"}
 
 def get_html_text(link):
     """
     Gets html text from the page source of link provided and resturns bs4 object
     """
-    text = urlopen(link)
-    soup = BeautifulSoup(text,"lxml")
+    text = requests.get(link, headers=HEADERS).text
+    soup = BeautifulSoup(text, "lxml")
     return soup
 
 def get_restaurant_names(soup):
