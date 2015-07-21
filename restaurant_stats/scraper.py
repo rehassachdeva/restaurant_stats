@@ -8,7 +8,7 @@ def get_html_text(link):
     Gets html text from the page source of link provided and resturns bs4 object
     """
     text = urlopen(link)
-    soup = BeautifulSoup(text)
+    soup = BeautifulSoup(text,"lxml")
     return soup
 
 def get_restaurant_names(soup):
