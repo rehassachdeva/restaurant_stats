@@ -20,7 +20,7 @@ setup (
     url = 'http://github.com/rehassachdeva/restaurant_stats',
     packages=find_packages(),
     scripts=['scripts/restaurant_stats'],
-    install_requires = ['beautifulsoup4', 'numpy', 'matplotlib'],
+    install_requires = ['beautifulsoup4', 'numpy', 'matplotlib', 'requests'],
     classifiers=[
         'Development Status :: 3 - Alpha',
         'License :: OSI Approved :: MIT License',
