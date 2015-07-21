@@ -1,0 +1,41 @@
+#!/usr/bin/python2
+
+import sys
+import argparse
+from restaurant_stats import grapher
+
+try:
+    from restaurant_stats import __desc__ # try to get version number
+except ImportError:
+    __desc__ = 'UNKNOWN'
+
+
+def setup_parser():
+    """
+    Generates the parser
+    """
+    
+    description = 'Scrape restaurant, rating and cost data from zomato.com'
+    
+    parser = argparse.ArgumentParser(description=description)
+    
+    parser.add_argument('--version', '-v',  action='version', help="Display current version of restaurant_stats", version=__desc__)
+    
+    help = "Url of a zomato.com page that lists the restaurants based on your requirements(zone, time etc). \
+            eg. https://www.zomato.com/amritsar/ranjit-avenue-restaurants?category=1"
+    
+    parser.add_argument('link', type=str, help=help)
+
+    parser.add_argument('--file', '-f',  type=argparse.FileType('w'), default="graph.png", help="Path to output file, defaults to 'graph.png'", dest='outfile')
+
+    return parser
+
+
+if __name__ == '__main__':
+    
+    parser = setup_parser()
+    
+    args = parser.parse_args()
+
+    grapher.graph(args.link, args.outfile)
+
