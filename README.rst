@@ -11,7 +11,7 @@ Run
 
 Dependencies
 ============
-restaurant_stats is based on Python 2.7. Requires ``BeautifulSoup4`` for html parsing, ``urllib`` for downloading page source, ``Matplotlib`` and ``numpy`` for plotting graph.
+restaurant_stats is based on Python 2.7. Requires ``BeautifulSoup4`` for html parsing, ``requests`` for downloading page source, ``Matplotlib`` and ``numpy`` for plotting graph.
 
 Usage
 =====
