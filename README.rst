@@ -35,10 +35,6 @@ Why?
 * I am a big foodie and thought it'd be nice to optimise restaurant finding in this way.
 * Graphs are fun :).
 
-Issues, Bugs?
-=============
-.. |issues| replace:: https://github.com/rehassachdeva/restaurant_stats/issues
-
 Example
 =======
 
